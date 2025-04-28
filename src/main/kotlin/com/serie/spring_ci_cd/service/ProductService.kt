@@ -12,7 +12,8 @@ class ProductService {
         val products = listOf(
             Product(UUID.randomUUID(), "Produto A", 10.99),
             Product(UUID.randomUUID(), "Produto B", 20.49),
-            Product(UUID.randomUUID(), "Produto C", 5.75)
+            Product(UUID.randomUUID(), "Produto C", 5.75),
+            Product(UUID.randomUUID(), "Produto D", 5.75),
         )
         return ResponseEntity.ok(products)
     }
