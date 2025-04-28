@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.RestController
 class ProductController(private val productService: ProductService){
 
     @GetMapping("/")
-    fun welcome(){
-        println("PROJECT RUNNINGG SUCCESSFUL")
+    fun welcome(): String {
+        return "PROJECT RUNNINGG SUCCESSFUL"
     }
+
 
     @GetMapping("/products")
     fun getAll():ResponseEntity<Any>{
